@@ -1,0 +1,22 @@
+body {
+  background: red;
+}
+
+/* Small Devices, Tablets */
+@media (min-width: 768px) {
+  body {
+    background: blue;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media (min-width: 992px) {
+  body {
+    background: green;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width: 1200px) {
+
+}
