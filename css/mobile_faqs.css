@@ -1,10 +1,11 @@
 body {
   font-family: 'Raleway', sans-serif;
-
 }
+
 a {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -15,14 +16,13 @@ a:hover {
 }
 
 /*header*/
-
-
 header {
   display: flex;
   justify-content: center;
   background-color: black;
   height: 50px;
 }
+
 header .logo {
   width: 100%;
   display: flex;
@@ -37,17 +37,17 @@ header .logo h1{
 }
 
 /*banner*/
-
-
 .banner {
-    display: block;
-    position: relative;
-    margin-bottom: 15px;
-    margin-top: 0px;
-  }
-  .banner .img-banner {
-    width: 100%;
-  }
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+
+.banner .img-banner {
+  width: 100%;
+}
+
 /*navegador*/
 .faqs1{
   display: flex;
@@ -61,7 +61,6 @@ header .logo h1{
   left: 15px;
   margin-bottom: 15px;
 }
-
 
 nav ul li a {
   text-align: left;
@@ -90,52 +89,54 @@ nav ul li p {
 }
 
 /*banners 2 y 3*/
-
 .banner2 {
-    display: block;
-    position: relative;
-    margin: 0px auto;
-    margin-top: 15px;
-    width: 320px;
-    height: 213px;
-  }
-  .banner2 .img-banner {
-    width: 100%;
-    height: 100%;
-  }
-  .banner2 .promo2 {
-    position: absolute;
-    right: 50px;
-    bottom: 30px;
-    display: block;
-    width: 50px;
-    color: white;
-    font-size: 15px;
-  }
+  display: block;
+  position: relative;
+  margin: 0px auto;
+  margin-top: 15px;
+  width: 320px;
+  height: 213px;
+}
 
-  .banner3 {
-      display: block;
-      position: relative;
-      margin: 0px auto;
-      width: 320px;
-      height: 213px;
-    }
-    .banner3 .img-banner {
-      width: 100%;
-      height: 100%;
-    }
-    .banner3 .promo3 {
-      position: absolute;
-      right: 50px;
-      bottom: 30px;
-      display: block;
-      width: 30px;
-      color: white;
-      font-size: 15px;
-    }
+.banner2 .img-banner {
+  width: 100%;
+  height: 100%;
+}
+
+.banner2 .promo2 {
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+  display: block;
+  width: 50px;
+  color: white;
+  font-size: 15px;
+}
+
+.banner3 {
+  display: block;
+  position: relative;
+  margin: 0px auto;
+  width: 320px;
+  height: 213px;
+}
+
+.banner3 .img-banner {
+  width: 100%;
+  height: 100%;
+}
+
+.banner3 .promo3 {
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+  display: block;
+  width: 30px;
+  color: white;
+  font-size: 15px;
+}
 
 /*elegi*/
-
 .elegi{
   display: flex;
   justify-content: center;
@@ -147,28 +148,30 @@ nav ul li p {
   font-weight:bold;
 }
 
-
-
 /*carta*/
-
 .columnas {
   margin-top: 20px;
 }
+
 .columna {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
 }
+
 .columna img {
   height: 140px;
   width: 140px;
 }
+
 .columna .img-square {
   display: none;
 }
+
 .columna h2 {
   margin: 12px 0;
 }
+
 .columna p {
   margin-bottom: 12px;
 }
@@ -184,9 +187,7 @@ nav ul li p {
 }
 
 /*boton*/
-
 .form_reserva .big_button{
-
   background: #333;
   font-size: 20px;
   display: block;
@@ -208,6 +209,7 @@ footer {
   align-content: center;
   width: 100%;
 }
+
 footer .contenedor .watch {
   display: flex;
   justify-content: center;
@@ -222,18 +224,17 @@ footer .contenedor .watch .uno{
   margin-bottom: 8px;
 }
 
-
-
 footer .social {
   display: flex;
   align-content: center;
   justify-content: center;
   margin: 20px 0 30px;
 }
-footer .social li {
 
+footer .social li {
   margin-left: 5px;
 }
+
 footer .social img{
   width: 30px;
   height: 30px;
