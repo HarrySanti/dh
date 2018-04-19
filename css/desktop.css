@@ -1,7 +1,4 @@
 @media (min-width: 1200px) {
-  
-
-
   .contenedor {
     width: 1180px;
     margin: 0px auto;
@@ -11,11 +8,12 @@
   nav ul li {
     width: auto;
   }
-  nav ul li a {
 
+  nav ul li a {
     width: 232px;
     margin-right: 5px;
   }
+
   nav ul li:last-child a {
     margin-right: 0;
   }
@@ -28,11 +26,7 @@
     right: -3px;
   }
 
-
   /*columnas*/
-
-
-
   .columnas .columna {
     width: 540px;
     display: flex;
@@ -40,75 +34,65 @@
   }
 
   .columna img {
-
     width: 190px;
   }
+
   .columna .img-rectangle {
     display: none;
   }
+
   .columna .img-square {
     display: flex;
   }
-  .columna .contenido {
 
+  .columna .contenido {
     width: 320px;
   }
+
   .columna .contenido .ver_mas {
     width: 127px;
   }
 
-  .form_reserva .big_button {
+  .form_reserva .big_button {}
 
+  /*form*/
+  .formres {
+    width: 1180px;
+    margin-top: 5px;
+    background: grey;
+    border-radius: 10px;
+    display: block;
+   }
+
+  .formres form {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 10px;
   }
 
-/*form*/
+  .formres .selector{
+    width: 350px;
+  }
 
-.formres {
+  .formres .selector label{
+    font-size: 15px;
+  }
 
-  width: 1180px;
-  margin-top: 5px;
-  background: grey;
-  border-radius: 10px;
-  display: block;
- 
+  .formres .selector select{
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+  }
 
-
-}
-
-.formres form{
-  margin-top: 10px; 
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  padding-top: 10px;
-
-}
-
-
-.formres .selector{
-  width: 350px;
-}
-
-.formres .selector label{
-  font-size: 15px;
-}
-
-.formres .selector select{
-  width: 250px;
-  height: 30px;
-  font-size: 15px;
-}
-
-.formres button {
-  margin-left: 510px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  font-size: 18px;
-  padding: 10px;
-  background: black;
-  color: white;
-}
-
-
-
+  .formres button {
+    margin-left: 510px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 10px;
+    background: black;
+    color: white;
+  }
 }
