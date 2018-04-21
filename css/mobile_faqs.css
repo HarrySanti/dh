@@ -1,10 +1,11 @@
 body {
   font-family: 'Raleway', sans-serif;
-}
 
+}
 a {
   text-decoration: none;
 }
+
 
 .contenedor {
   margin: 0px auto;
@@ -12,13 +13,14 @@ a {
 }
 
 /*header*/
+
+
 header {
   display: flex;
   justify-content: center;
   background-color: black;
   height: 50px;
 }
-
 header .logo {
   width: 100%;
   display: flex;
@@ -29,10 +31,11 @@ header .logo h1{
   margin-top: 10px;
   font-size: 30px;
   color: white;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 /*banner*/
+
 .banner {
   display: block;
   position: relative;
@@ -44,6 +47,7 @@ header .logo h1{
 }
 
 /*navegador*/
+
 .faqs1{
   display: inline-block;
   justify-content: center;
@@ -51,7 +55,7 @@ header .logo h1{
 }
 
 .faqs{
-  font-weight: bold;
+  font-weight: 700;
   font-size: 25px;
   position: relative;
   left: 80px;
@@ -69,7 +73,7 @@ nav ul li a {
   justify-content: flex-start;
   left: 80px;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 700;
   position: relative;
 }
 
@@ -88,55 +92,55 @@ nav ul li p {
   line-height: 11.5px;
 }
 
+
+
 /*banners 2 y 3*/
+
 .banner2 {
-  display: block;
-  position: relative;
-  margin: 0px auto;
-  margin-top: 15px;
-  width: 320px;
-  height: 213px;
-}
+    display: block;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 15px;
+    width: 320px;
+    height: 213px;
+  }
+  .banner2 .img-banner {
+    width: 100%;
+    height: 100%;
+  }
+  .banner2 .promo2 {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    display: block;
+    width: 50px;
+    color: white;
+    font-size: 15px;
+  }
 
-.banner2 .img-banner {
-  width: 100%;
-  height: 100%;
-}
-
-.banner2 .promo2 {
-  position: absolute;
-  right: 50px;
-  bottom: 30px;
-  display: block;
-  width: 50px;
-  color: white;
-  font-size: 15px;
-}
-
-.banner3 {
-  display: block;
-  position: relative;
-  margin: 0px auto;
-  width: 320px;
-  height: 213px;
-}
-
-.banner3 .img-banner {
-  width: 100%;
-  height: 100%;
-}
-
-.banner3 .promo3 {
-  position: absolute;
-  right: 50px;
-  bottom: 30px;
-  display: block;
-  width: 30px;
-  color: white;
-  font-size: 15px;
-}
+  .banner3 {
+      display: block;
+      position: relative;
+      margin: 0px auto;
+      width: 320px;
+      height: 213px;
+    }
+    .banner3 .img-banner {
+      width: 100%;
+      height: 100%;
+    }
+    .banner3 .promo3 {
+      position: absolute;
+      right: 50px;
+      bottom: 30px;
+      display: block;
+      width: 30px;
+      color: white;
+      font-size: 15px;
+    }
 
 /*elegi*/
+
 .elegi{
   display: flex;
   justify-content: center;
@@ -145,33 +149,31 @@ nav ul li p {
 }
 
 .elegi .tuyo{
-  font-weight:bold;
+  font-weight:700;
 }
 
+
+
 /*carta*/
+
 .columnas {
   margin-top: 20px;
 }
-
 .columna {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
 }
-
 .columna img {
   height: 140px;
   width: 140px;
 }
-
 .columna .img-square {
   display: none;
 }
-
 .columna h2 {
   margin: 12px 0;
 }
-
 .columna p {
   margin-bottom: 12px;
 }
@@ -186,6 +188,7 @@ nav ul li p {
   padding: 10px 0;
 }
 
+
 /*footer*/
 footer {
   background: black;
@@ -194,7 +197,6 @@ footer {
   align-content: center;
   width: 100%;
 }
-
 footer .contenedor .watch {
   display: flex;
   justify-content: center;
@@ -205,7 +207,7 @@ footer .contenedor .watch {
 }
 
 footer .contenedor .watch .uno{
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 9px;
   font-size: 12px;
 }
