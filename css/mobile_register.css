@@ -1,3 +1,5 @@
+/*CSS GENERAL*/
+
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -15,15 +17,16 @@ a:hover {
   width: 480px;
 }
 
+
 /*HEADER*/
 
+/*header*/
 header {
   display: flex;
   justify-content: center;
   background-color: black;
   height: 70px;
 }
-
 
 header h1 {
   font-size: 45px;
@@ -33,43 +36,43 @@ header h1 {
 }
 
 
-
 /*CUERPO*/
 
 .cuerpo{
   display: flex;
-  align-content: flex-start;
+  justify-content: flex-start;
 }
-
 
 /* foto */
 
-.foto_signin img {
+.foto_register img {
   width: 100px;
 }
 
-/* SECCION FORMULARIO*/
+/* seccion_formulario*/
 
 .seccion_formulario{
-  margin-left: 15px;
-  margin-top: 30px;
+  margin-left: 20px;
+  margin-top: 50px;
 }
 
-/*SIGNIN*/
 .seccion_formulario h1{
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 25px;
+  width: 80%;
 }
 
-/*Formulario*/
+/*formulario*/
+
+
 .formulario {
-  width: 340px;
+  width: 100% ;
   margin-bottom: 15px;
 }
 
 .form1 {
-  width: 340px;
+  width: 100%;
   font-size: 9px;
   font-weight: 100;
   font-style: normal;
@@ -81,63 +84,22 @@ header h1 {
   padding-left: 8px;
 }
 
-/*Botones de recordarme+olvide contraseña*/
-.botones{
-  display: inline-block;
-  position: relative;
-  width:340px;
-  margin-bottom: 40px;
-}
-
-.recordarme_box {
-  font-size: 10px;
-  font-style: italic;
-  position: absolute;
-  left: 5px;
-}
-.recordarme_box label{
-  font-size: 10px;
-}
-
-.olvidar{
-  font-size: 10px;
-  position: absolute;
-  top: 8px;
-  right: 0px;
-}
-
-/*Boton de ingresar*/
-/* .ingresar{
+.registrarme{
   font-size:15px;
   color:black;
   text-align: center;
-  font-weight: 700;
-}*/
-
-.registrarme h2{
-  font-size:15px;
-  color:black;
-  text-align: center;
-  font-weight: 700;
-  margin-top: -5px;
 }
 
-hr {
-  width: 120px;
-  background-color: black;
-  height: 1px;
-  margin-top: 4px;
-}
-
-p {
+p{
+  width: 200px;
   font-size: 9px;
-  font-style: italic;
-  width: 320px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  font-weight: 200;
+  font-style: normal;
+  opacity: 0.85;
+  text-align: center;
+  margin-top: 5px;
+  margin-left:55px;
 }
-
-
 
 
 /*ACA EMPIEZA EL CSS DEL FOOTER*/
@@ -145,8 +107,8 @@ p {
 footer {
 	background: black;
 	color: white;
+  margin-top: 5px;
 	width: 100%;
-  margin-top: -5px;
 }
 footer .watch {
 	display: flex;

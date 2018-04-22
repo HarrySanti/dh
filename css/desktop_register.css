@@ -1,0 +1,91 @@
+/*CSS GENERAL*/
+
+@media (min-width: 992px) {
+
+  .contenedor_general {
+    margin: 0px auto;
+    width: 100%;
+  }
+  /*CUERPO*/
+
+  .cuerpo{
+    display: flex;
+    justify-content: center;
+  }
+
+  /* foto */
+
+  .foto_register img {
+    width: 100px;
+  }
+
+  /* seccion_formulario*/
+
+  .seccion_formulario{
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 80%;
+  }
+
+  .seccion_formulario h1{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+
+  /*formulario*/
+
+
+  .formulario {
+    width: 100%;
+    margin-bottom: 25px;
+    margin-left: 25px;
+
+
+  }
+
+
+  .formulario form{
+    display: flex;
+    flex-direction: column;
+  }
+  .formulario form .row{
+    display: flex;
+    justify-content: flex-start;
+    width: 800px;
+  }
+
+  .form1 {
+    width: 300px;
+    font-size: 13px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 20px;
+    opacity: 0.85;
+    border: 2px solid #f1f1f1;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    padding-left: 8px;
+  }
+
+  .registrarme{
+    font-size:15px;
+    color:black;
+    text-align: center;
+  }
+
+  p{
+    font-size: 9px;
+    font-weight: 200;
+    font-style: normal;
+    opacity: 0.85;
+    text-align: center;
+    margin-top: 5px;
+    margin-left:55px;
+    width: 100%;
+  }
+
+
+
+}
