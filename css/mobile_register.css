@@ -1,0 +1,185 @@
+/*CSS GENERAL*/
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.contenedor_general {
+  margin: 0px auto;
+  width: 480px;
+}
+
+
+/*HEADER*/
+
+/*header*/
+header {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 70px;
+}
+
+header h1 {
+  font-size: 45px;
+  font-weight: 800;
+  color: white;
+  margin-top: 10px;
+}
+
+
+/*CUERPO*/
+
+.cuerpo{
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* foto */
+
+.foto_signin img {
+  width: 100px;
+}
+
+/* seccion_formulario*/
+
+.seccion_formulario{
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.seccion_formulario h1{
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+/*formulario*/
+
+
+.formulario {
+  width: 320px;
+  margin-bottom: 15px;
+}
+
+.form1 {
+  width: 300px;
+  font-size: 9px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 20px;
+  opacity: 0.85;
+  border: 1px solid #f1f1f1;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding-left: 8px;
+}
+
+.registrarme{
+  font-size:15px;
+  color:black;
+  text-align: center;
+
+}
+
+p{
+  width: 200px;
+  font-size: 9px;
+  font-weight: 200;
+  font-style: normal;
+  opacity: 0.85;
+  text-align: center;
+  margin-top: 5px;
+  margin-left:55px;
+}
+
+
+
+/*ACA EMPIEZA EL CSS DEL FOOTER*/
+/*footer*/
+footer {
+	background: black;
+	color: white;
+  margin-top: 35px;
+	width: 100%;
+}
+footer .watch {
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
+	text-align: center;
+
+}
+
+.watch ul h3 {
+	font-weight: 700;
+	margin-bottom: 9px;
+	font-size: 15px;
+	margin-top: 30px;
+}
+
+.watch ul li {
+	font-size: 10px;
+	margin-bottom: 3px;
+}
+
+/* footer .watch .uno{
+	font-weight: 700;
+	margin-bottom: 9px;
+	font-size: 12px;
+} */
+
+footer .contacto {
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.contacto ul h3 {
+	font-weight: 700;
+	margin-bottom: 9px;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.contacto ul li {
+	font-size: 10px;
+	margin-bottom: 3px;
+}
+
+/* footer .contacto .uno{
+	font-weight: 700;
+	margin-bottom: 9px;
+	font-size: 12px;
+}*/
+
+footer .social {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin: 25px 0 30px;
+}
+
+footer .social li {
+	margin-left: 10px;
+	margin-bottom: 30px;
+}
+
+footer .social img{
+	width: 20px;
+	height: 20px;
+}
+
+footer .social li:first-child {
+	margin-left: 0;
+}
