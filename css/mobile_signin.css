@@ -104,17 +104,23 @@ header h1 {
   position: absolute;
   top: 8px;
   right: 0px;
+  font-style: italic;
 }
 
 /*Boton de ingresar*/
-.ingresar{
+.ingresar h2{
   font-size:15px;
   color:black;
   text-align: center;
   font-weight: 700;
-
 }
 
+hr {
+  width: 100px;
+  background-color: black;
+  height: 1px;
+  margin-top: 4px;
+}
 
 
 
@@ -176,6 +182,10 @@ footer .contacto {
 	margin-bottom: 9px;
 	font-size: 12px;
 }*/
+
+footer {
+  margin-top: -3px;
+}
 
 footer .social {
 	display: flex;
