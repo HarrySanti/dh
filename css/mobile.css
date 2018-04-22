@@ -80,16 +80,16 @@ header .registro h1{
 
 .banner .marca {
 	position: absolute;
-    align-content:center;
-    align-self: center;
-    bottom: 30px;
-    left: 115px;
-    right: 115px;
-    width: 250px;
-    color: white;
-    padding: 15px;
-    font-size: 80px;
-    font-weight: 700;
+  align-content:center;
+  align-self: center;
+  bottom: 30px;
+  left: 115px;
+  right: 115px;
+  width: 250px;
+  color: white;
+  padding: 15px;
+  font-size: 80px;
+  font-weight: 700;
 }
 
 /*navegador*/
@@ -110,6 +110,7 @@ nav ul li:hover {
 }
 
 /*banners 2 y 3*/
+
 .banner2 {
 	display: block;
 	position: relative;
@@ -157,6 +158,10 @@ nav ul li:hover {
 	font-weight: 300;
 }
 
+.banner4 {
+	display: none;
+}
+
 /*elegi*/
 .elegi {
 	display: flex;
@@ -201,6 +206,10 @@ nav ul li:hover {
 	font-weight: 300;
 }
 
+.columna .descripcion {
+	display: none;
+}
+
 .columna .anadir {
 	width: 66px;
 	text-align: center;
@@ -213,6 +222,10 @@ nav ul li:hover {
 	font-size: 14px;
 }
 
+.columna .info {
+	display: none;
+}
+
 /*footer*/
 footer {
 	background: black;
@@ -220,6 +233,7 @@ footer {
 	color: white;
 	width: 100%;
 }
+
 footer .watch {
 	display: flex;
 	justify-content: center;
