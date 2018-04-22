@@ -6,19 +6,6 @@ a {
 	text-decoration: none;
 }
 
-h1 {
-	font-size: 20px;
-}
-
-h2 {
-	font-size: 16px;
-}
-
-h3 {
-	font-size: 15px;
-	font-weight: bold
-}
-
 .registro:hover{
 	text-decoration: underline;
 	color: white;
@@ -27,6 +14,11 @@ h3 {
 .ingresar:hover{
 	text-decoration: underline;
 	color: white;
+}
+
+.nave:hover{
+	text-decoration: underline;
+	color: black;
 }
 
 .contenedor {
@@ -110,7 +102,7 @@ nav ul li a {
 	justify-content: center;
 	font-size: 15px;
 	font-weight: 300;
-	border: 1px solid #666768;
+	/*border: 1px solid #666768;*/
 }
 
 nav ul li:hover {
@@ -180,7 +172,6 @@ nav ul li:hover {
 
 .elegi strong {
 	font-weight: 700;
-	margin-left: 5px;
 }
 
 /*carta*/
@@ -234,28 +225,52 @@ footer .watch {
 	justify-content: center;
 	font-size: 12px;
 	text-align: center;
-	margin-top: 20px;
+
 }
 
-footer .watch .uno{
+.watch ul h3 {
+	font-weight: 700;
+	margin-bottom: 9px;
+	font-size: 15px;
+	margin-top: 30px;
+}
+
+.watch ul li {
+	font-size: 10px;
+	margin-bottom: 3px;
+}
+
+/* footer .watch .uno{
 	font-weight: 700;
 	margin-bottom: 9px;
 	font-size: 12px;
-}
+} */
 
 footer .contacto {
 	display: flex;
 	justify-content: center;
 	font-size: 12px;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
-footer .contacto .uno{
+.contacto ul h3 {
+	font-weight: 700;
+	margin-bottom: 9px;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.contacto ul li {
+	font-size: 10px;
+	margin-bottom: 3px;
+}
+
+/* footer .contacto .uno{
 	font-weight: 700;
 	margin-bottom: 9px;
 	font-size: 12px;
-}
+}*/
 
 footer .social {
 	display: flex;
@@ -266,6 +281,7 @@ footer .social {
 
 footer .social li {
 	margin-left: 10px;
+	margin-bottom: 30px;
 }
 
 footer .social img{
