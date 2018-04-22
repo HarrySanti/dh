@@ -7,70 +7,86 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/mobile_signin.css">
-		<link rel="stylesheet" href="css/tablet.css">
-		<link rel="stylesheet" href="css/desktop.css">
 	</head>
 
 	<body>
-		<div class="contenedor">
-			<header class="headermarca">
+		<div class="contenedor_general">
+
+			<!--Este es el header-->
+			<header class="header">
 				<h1>watch</h1>
 			</header>
 
-			<section class="foto_signin">
-				<img src="fotos/img_signin.jpg" class="img_signin" alt="">
-			</section>	
-			
-			<!-- Esto es la caja de texto-->
-			<section class="datos">
-				<h1>Sign in</h1>
-				<!-- Esto es el contenedor de los datos + botones-->
-				<div class="datoscompletar">
-					<!-- Esto es usuario y contraseña-->
+
+			<!--Este es el cuerpo. Foto+Formulario-->
+			<div class="cuerpo">
+
+				<!--Foto de signin-->
+				<div class="foto_signin">
+					<img src="fotos/img_sign_in.jpg" class="img_signin" alt="">
+				</div>
+
+				<!--Formulario-->
+				<div class=seccion_formulario>
+					<h1>Sign in</h1>
+
+					<!-- Esto es el formulario-->
 					<div class="formulario">
 						<form action="" method="">
 							<div>
-								<input class="form1" type="email" name="correo" placeholder="Correo Electrónico" class="correo">
+								<input class="form1" type="text" name="correo" placeholder="Correo Electrónico" class="correo">
 							</div>
 							<div>
-								<input class="form1" tpype="password" name="password" placeholder="Ingrese su contraseña" class="password">
+								<input class="form1" tpype="password" name="password" placeholder="Contraseña" class="password">
 							</div>
 						</form>
 					</div>
-					<!-- Esto es el botón de recordame-->
-					<div>
-						<label class="recordame">Recordame
-						  <input type="checkbox" checked="checked">
-						  <span class="checkmark"></span>
-						</label>
-					</div>
-					<!-- Esto es el link de olvidaste tu contraseña-->
-					<div class="olvide">
-						<a href="">¿Olivdaste tu contraseña?</a>
-					</div>
-					<!-- Esto es el botón de acceder-->
-					<div class="acceder">
-						<a href=""> <h2>Acceder</h2></a>
-					</div>
-				</div>
-			</section>
 
-			<footer>
-				<div class="contenedor">
+					<div class="botones">
+						<!-- Esto es el botón de recordame-->
+						<div class="recordarme_box">
+							<label>
+								<input type="checkbox" value="checkbox"> Recordarme
+							</label>
+						</div>
+						<!-- Esto es el link de olvidaste tu contraseña-->
+						<div class="olvidar">
+							<a href="" class="olvide">¿Olvidaste tu contraseña?</a>
+						</div>
+
+					</div>
+
+
+
+					<!-- Esto es el botón de ingresar-->
+					<a  class="ingresar" href=""> <h2>Ingresar</h2></a>
+
+				</div>
+
+
+			</div>
+
+
+
+
+
+			<!--Este es el footer-->
+			<div class="contenedor">
+				<footer>
 					<div class="watch">
 						<ul>
-							<li class="uno">watch</li>
-							<div class="uno1">
+							<h3>watch</h3>
+							<div>
 								<li>Nosotros</li>
 								<li>Blog</li>
 								<li>Prensa</li>
 							</div>
 						</ul>
 					</div>
-					<div class="watch">
+					<div class="contacto">
 						<ul>
-							<li class="uno">contacto</li>
-							<div class="uno1">
+							<h3>contacto</h3>
+							<div>
 								<li>info@watch.com</li>
 								<li>+54 11 5139 0000</li>
 								<li>Crámer 5774, CABA</li>
@@ -78,13 +94,14 @@
 						</ul>
 					</div>
 					<ul class="social">
-						<li><a href="http://twitter.com" target="_blank"><img src="fotos/img_tw.png" alt="tw"></a></li>
-						<li><a href="http://instagram.com" target="_blank"><img src="fotos/img_ig.png" alt="ig"></a></li>
-						<li><a href="http://facebook.com" target="_blank"><img src="fotos/img_fb.png" alt="fb"></a></li>
+						<li><a href="https://twitter.com" target="_blank"><img src="fotos/img_tw.png" alt="tw"></a></li>
+						<li><a href="https://instagram.com" target="_blank"><img src="fotos/img_ig.png" alt="ig"></a></li>
+						<li><a href="https://facebook.com" target="_blank"><img src="fotos/img_fb.png" alt="fb"></a></li>
 					</ul>
-				</div>
-			</footer>
+				</footer>
+			</div>
+
 		</div>
-		
+
 	</body>
 </html>
