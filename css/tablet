@@ -44,6 +44,17 @@ nav ul li .nave {
   height: 236px;
 }
 
+.banner2 .complex {
+	right: 40px;
+	bottom: 10px;
+	font-size: 20px;
+}
+
+.banner3 .simple {
+	right: 40px;
+	bottom: 10px;
+	font-size: 20px;
+}
   /*columnas*/
 
   .elegi h1{
@@ -71,8 +82,10 @@ nav ul li .nave {
     margin-right: 10px;
 }
 
-  /*form*/
-  .form_reserva {}
+
+footer {
+  margin-top: 10px;  
+}
 
   footer .contenedor {
     display: flex;
