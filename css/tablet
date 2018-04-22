@@ -1,0 +1,92 @@
+@media (min-width: 768px) {
+  /*nav*/
+  nav ul  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav ul li {
+    width: 20%;
+  }
+
+nav ul li .nave {
+  font-size: 12px;
+}
+
+  /*banner*/
+.banner {
+  display: block;
+  position: relative;
+}
+
+.banner .img-banner {
+  width: 100%;
+}
+
+.banner2 {
+  margin-bottom: 30px;
+  margin-left: 70px;
+}
+
+.banner3 {
+  margin-bottom: 50px;
+  margin-left: 70px;
+}
+
+.banner2 .img-banner {
+  width: 354px;
+  height: 236px;
+}
+
+.banner3 .img-banner {
+  width: 354px;
+  height: 236px;
+}
+
+  /*columnas*/
+
+  .elegi h1{
+  	font-size: 25px;
+  	font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .columnas {
+    display: flex;
+    justify-content: center;
+  }
+
+  .columnas .columna {
+    width: 360px;
+  }
+
+
+  .columnas .columna:nth-child(1) {
+    margin-right: 60px;
+
+  }
+
+  .columnas .columna:nth-child(2) {
+    margin-right: 10px;
+}
+
+  /*form*/
+  .form_reserva {}
+
+  footer .contenedor {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  footer .copy {}
+
+  footer .social {}
+
+  footer .social li {
+    width: 36px;
+    margin-left: 10px;
+  }
+}
