@@ -5,7 +5,11 @@
 		<title>Watch</title>
 		<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 		<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/mobile_register.css">
+		<link rel="stylesheet" href="css/tablet_register.css">
+		<link rel="stylesheet" href="css/desktop_register.css">
+
 	</head>
 
 	<body>
@@ -19,8 +23,8 @@
 			<!--Este es el cuerpo. Foto+Formulario-->
 			<div class="cuerpo">
 
-				<!--Foto de signin-->
-				<div class="foto_signin">
+				<!--Foto de registro-->
+				<div class="foto_register">
 					<img src="Fotos/img_registrarse.jpg" class="img_signin" alt="">
 				</div>
 
@@ -31,17 +35,23 @@
 					<!-- Esto es el formulario-->
 					<div class="formulario">
 						<form action="" method="">
-							<div>
-								<input class="form1" type="text" name="nombre" placeholder="Nombre" class="correo">
+
+							<div class="row">
+								<div>
+									<input class="form1" type="text" name="nombre" placeholder="Nombre" class="correo">
+								</div>
+								<div>
+									<input class="form1" tpype="password" name="apellido" placeholder="Apellido" class="password">
+								</div>
 							</div>
-							<div>
-								<input class="form1" tpype="password" name="apellido" placeholder="Apellido" class="password">
-							</div>
-							<div>
-								<input class="form1" type="number" name="dni" placeholder="DNI" class="dni">
-							</div>
-							<div>
-								<input class="form1" type="phone" name="phone" placeholder="Teléfono celular" class="celular">
+
+							<div class="row">
+								<div>
+									<input class="form1" type="number" name="dni" placeholder="DNI" class="dni">
+								</div>
+								<div>
+									<input class="form1" type="phone" name="phone" placeholder="Teléfono celular" class="celular">
+								</div>
 							</div>
 							<div>
 								<input class="form1" tpype="email" name="email" placeholder="Dirección de correo electrónico" class="password">
@@ -53,9 +63,8 @@
 					</div>
 
 					<!-- Esto es el botón de acceder-->
-						<a class="registrarme" href=""> <h2>Registrarme!</h2></a>
-						<hr></hr>
-						<p>Al crear una cuenta, declaro que soy mayor de edad y acepto los Términos y condiciones y las Políticas de privacidad de Watch Argentina.</p>
+						<a  class="registrarme" href=""> <h2>Registrarme!</h2></a>
+						<p>Al crear una cuenta, declaro que soy mayor de edad y acepto los Términos y condiciones y las Políticas de privacidad de Watch Argentina</p>
 
 					</div>
 
