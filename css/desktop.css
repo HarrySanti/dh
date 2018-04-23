@@ -1,277 +1,365 @@
-/* Large Devices, Wide Screens */
 @media (min-width: 1200px) {
-  .contenedor {
-    width: 100%;
-    margin: 0px auto;
-  }
+    .contenedor {
+        width: 100%;
+        margin: 0px auto;
+    }
+	
+    /*HEADER*/
+    header {
+    	height: 70px;
+    }
 
-/*header*/
+    header .ingresar h1 {
+    	margin-right: 35px;
+    	font-size: 18px;
+        margin-top: 25px;
+    }
 
-header {
-	height: 70px;
-}
+    header h1 {
+        font-size: 18px;
+        margin-top: 25px;
+    }
 
-header .ingresar h1{
-	margin-right: 35px;
-	font-size: 18px;
-  margin-top: 25px;
-}
+    header .registro h1 {
+    	margin-left: 35px;
+    	font-size: 18px;
+        margin-top: 25px;
+    }
 
-header h1 {
-  font-size: 18px;
-  margin-top: 25px;
-}
+    .banner .marca {
+		font-size: 190px;
+		bottom: 102px;
+		left: 315px;
+		right: 315px;
+		width: 569.42px;
+    }
 
-header .registro h1{
-	margin-left: 35px;
-	font-size: 18px;
-  margin-top: 25px;
-}
+    nav ul  {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+    }
 
-.banner .marca {
-  font-size: 190px;
-  bottom: 102px;
-  left: 315px;
-  right: 315px;
-  width: 569.42px;
-}
+    nav ul li {
+		width: 20%;
+    }
 
-nav ul  {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+    nav ul li .nave {
+		font-size: 25px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+    }
 
-nav ul li {
-  width: 20%;
-}
+    /*BANNER*/
+    .banner {
+		display: block;
+		position: relative;
+    }
 
-nav ul li .nave {
-  font-size: 25px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
+    .banner .img-banner {
+		width: 100%;
+    }
 
-  /*banner*/
-.banner {
-  display: block;
-  position: relative;
-}
+    /*BANNER 2 y 3*/
+    .banner2 {
+		display: inline-block;
+    }
 
-.banner .img-banner {
-  width: 100%;
-}
+    .banner3 {
+		display: inline-block;
+    }
 
-/*fotos complex y simple*/
+    .banner2 .img-banner {
+		width: 570px;
+		height: 380px;
+		margin-left: 30px;
+    }
 
-.banner2{
-  display: inline-block;
-}
+    .banner3 .img-banner {
+		width: 570px;
+		height: 380px;
+		margin-left: 275px;
+    }
 
-.banner3 {
-  display: inline-block;
-}
+    .banner2 .complex {
+    	left: 415px;
+    	bottom: 10px;
+    	font-size: 30px;
+    }
 
-.banner2 .img-banner {
-  width: 570px;
-  height: 380px;
-  margin-left: 30px;
-}
+    .banner3 .simple {
+    	right: 80px;
+		left: 700px;
+    	bottom: 10px;
+    	font-size: 30px;
+    }
 
-.banner3 .img-banner {
-  width: 570px;
-  height: 380px;
-  margin-left: 275px;
+    .banner4 {
+    	display: block;
+    	position: relative;
+    	margin: 0px auto;
+		margin-top: -3px;
+    	width: 1140px;
+    	height: 389.62px;
+    }
+	
+    .banner4 .img-banner {
+    	width: 100%;
+    	height: 100%;
+    }
+	
+    .banner4 .women {
+    	position: absolute;
+		align-content:center;
+		align-self: center;
+    	right: 155px;
+    	bottom: 300px;
+    	display: block;
+    	width: 50px;
+    	color: white;
+    	font-size: 40px;
+    	font-weight: 300;
+    }
+      
+	/*columnas*/
+    .elegi h1 {
+      	font-size: 50px;
+      	font-weight: 300;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
 
-}
+    .columna img {
+      	height: 224px;
+      	width: 224px;
+    }
 
-.banner2 .complex {
-	left: 415px;
-	bottom: 10px;
-	font-size: 30px;
-}
+    .columnas {
+		display: inline-block;
+        justify-content: center;
+        margin-top: -20px;
+    }
 
-.banner3 .simple {
-	right: 80px;
-  left: 700px;
-	bottom: 10px;
-	font-size: 30px;
-}
+    .columnas .columna {
+        width: 360px;
+    }
 
-.banner4 {
-	display: block;
-	position: relative;
-	margin: 0px auto;
-  margin-top: -3px;
-	width: 1140px;
-	height: 389.62px;
-}
-.banner4 .img-banner {
-	width: 100%;
-	height: 100%;
-}
-.banner4 .women {
-	position: absolute;
-  align-content:center;
-  align-self: center;
-	right: 155px;
-	bottom: 300px;
-	display: block;
-	width: 50px;
-	color: white;
-	font-size: 40px;
-	font-weight: 300;
-}
-  /*columnas*/
+    .columnas .columna .contenido {
+        width: 500px;
+    }
 
-  .elegi h1{
-  	font-size: 50px;
-  	font-weight: 300;
-    margin-bottom: 40px;
-    margin-top: 30px;
-  }
+	.columna h2 {
+      	margin: 12px 0;
+      	font-weight: 700;
+      	font-size: 22px;
+        margin-top: 30px;
+    }
 
-  .columna img {
-  	height: 224px;
-  	width: 224px;
-  }
+    .columna p {
+      	margin-bottom: 12px;
+      	font-size: 20px;
+      	font-weight: 300;
+        margin-top: 20px;
+    }
 
-  .columnas {
-    display: inline-block;
-    justify-content: center;
-    margin-top: -20px;
-  }
+    .columna .descripcion {
+      	display: none;
+    }
 
-  .columnas .columna {
-    width: 360px;
-  }
+    .columna .anadir {
+      	width: 88px;
+      	font-size: 20px;
+        margin-top: 20px;
+    }
 
-  .columnas .columna .contenido {
-    width: 500px;
-  }
+    .columna .info {
+		display: none;
+    }
 
-  .columna h2 {
-  	margin: 12px 0;
-  	font-weight: 700;
-  	font-size: 22px;
-    margin-top: 30px;
-  }
+    .columna .descripcion {
+        display: flex;
+        margin-bottom: 12px;
+      	font-size: 10px;
+      	font-weight: 300;
+        width: 120px;
+        font-style: italic;
+    }
 
-  .columna p {
-  	margin-bottom: 12px;
-  	font-size: 20px;
-  	font-weight: 300;
-    margin-top: 20px;
-  }
+    .columnas .columna:nth-child(1) {
+        margin-right: 30px;
+    }
 
-  .columna .descripcion {
-  	display: none;
-  }
+    .columnas .columna:nth-child(2) {
+        margin-right: 30px;
+    }
 
-  .columna .anadir {
-  	width: 88px;
-  	font-size: 20px;
-    margin-top: 20px;
-  }
+	/*FOOTER*/
+    footer {
+      margin-top: 10px;
+      height: 250px;
+    }
 
-  .columna .info {
-    display: none;
-  }
+    footer .contenedor {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
 
-.columna .descripcion {
-    display: flex;
-    margin-bottom: 12px;
-  	font-size: 10px;
-  	font-weight: 300;
-    width: 120px;
-    font-style: italic;
+    footer .watch {
+      	display: inline-block;
+      	justify-content: right;
+      	font-size: 18px;
+      	text-align: left;
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 20px;
+    }
 
-  }
+    .watch ul h3 {
+      	font-weight: 700;
+      	margin-bottom: 9px;
+      	font-size: 25px;
+      	margin-top: 30px;
+    }
 
-  .columnas .columna:nth-child(1) {
-    margin-right: 30px;
+    .watch ul li {
+      	font-size: 18px;
+      	margin-bottom: 3px;
+        line-height: 22px;
+    }
 
-  }
+    footer .contacto {
+      	display: inline-block;
+      	justify-content: right;
+      	font-size: 18px;
+      	text-align: left;
+      	margin-top: 20px;
+    }
 
-  .columnas .columna:nth-child(2) {
-    margin-right: 30px;
-}
+    .contacto ul h3 {
+        font-weight: 700;
+      	margin-bottom: 9px;
+      	font-size: 25px;
+      	margin-top: 30px;
+    }
 
+    .contacto ul li {
+        font-size: 18px;
+      	margin-bottom: 3px;
+        line-height: 22px;
+    }
 
-footer {
-  margin-top: 10px;
-  height: 250px;
-}
+    footer .social {
+      	display: flex;
+      	align-content: center;
+      	justify-content: center;
+      	margin: 25px 0 30px;
+    }
 
-  footer .contenedor {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-  }
+    footer .social li {
+        width: 60px;
+        margin-left: 10px;
+    }
 
-  footer .watch {
-  	display: inline-block;
-  	justify-content: right;
-  	font-size: 18px;
-  	text-align: left;
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-top: 20px;
-  }
+    footer .social img {
+      	width: 40px;
+      	height: 40px;
+    }
 
-  .watch ul h3 {
-  	font-weight: 700;
-  	margin-bottom: 9px;
-  	font-size: 25px;
-  	margin-top: 30px;
-  }
+    footer .social li:first-child {
+      	margin-left: 0;
+    }
+	
+	/*SIGNIN DESKTOP*/
+	.contenedor-signin {
+		width: 100%;
+	}
 
-  .watch ul li {
-  	font-size: 18px;
-  	margin-bottom: 3px;
-    line-height: 22px;
-  }
+	.foto_signin {
+		width: 150px;
+	}
 
-  footer .contacto {
-  	display: inline-block;
-  	justify-content: right;
-  	font-size: 18px;
-  	text-align: left;
-  	margin-top: 20px;
-  }
+	.foto_register {
+		width: 150px;
+	}
+	
+	/*REGISTER DESKTOP*/
+	.contenedor-register {
+		margin: 0px auto;
+		width: 100%;
+	}
+	
+	/*CUERPO*/
+	.cuerpo-register {
+		display: flex;
+		justify-content: center;
+	}
 
-  .contacto ul h3 {
-    font-weight: 700;
-  	margin-bottom: 9px;
-  	font-size: 25px;
-  	margin-top: 30px;
-  }
+	/*FOTO*/
+	.foto-register img {
+		width: 100px;
+	}
 
-  .contacto ul li {
-    font-size: 18px;
-  	margin-bottom: 3px;
-    line-height: 22px;
-  }
+	/* seccion_formulario*/
+	.seccion-formulario-register {
+		margin-left: 20px;
+		margin-top: 50px;
+		width: 80%;
+	}
 
-  footer .social {
-  	display: flex;
-  	align-content: center;
-  	justify-content: center;
-  	margin: 25px 0 30px;
-  }
+	.seccion-formulario-register h1{
+		font-size: 30px;
+		font-weight: 400;
+		margin-bottom: 25px;
+	}
 
-  footer .social li {
-    width: 60px;
-    margin-left: 10px;
-  }
+	/*FORMULARIO*/
+	.formulario-register {
+		width: 100%;
+		margin-bottom: 25px;
+		margin-left: 25px;
+	}
 
-  footer .social img{
-  	width: 40px;
-  	height: 40px;
-  }
+	.formulario-register form {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.formulario-register form .row{
+		display: flex;
+		justify-content: flex-start;
+		width: 800px;
+	}
 
-  footer .social li:first-child {
-  	margin-left: 0;
-  }
+	.form1 {
+		width: 300px;
+		font-size: 13px;
+		font-weight: 100;
+		font-style: normal;
+		line-height: 20px;
+		opacity: 0.85;
+		border: 2px solid #f1f1f1;
+		border-radius: 3px;
+		margin-bottom: 15px;
+		margin-right: 15px;
+		padding-left: 8px;
+	}
+
+	.registrarme {
+		font-size: 15px;
+		color: black;
+		text-align: center;
+	}
+
+	.seccion-formulario-register p {
+		font-size: 9px;
+		font-weight: 200;
+		font-style: normal;
+		opacity: 0.85;
+		text-align: center;
+		margin-top: 5px;
+		margin-left: 55px;
+		width: 100%;
+	}
 }
