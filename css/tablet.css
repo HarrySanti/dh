@@ -1,13 +1,13 @@
 @media (min-width: 768px) {
       /*NAV*/
     .contenedor {
-        width: 120%;
+        width: 680px;
     }
 
     .banner .marca {
         font-size: 128px;
         bottom: 61.84px;
-        left: 192.2px;
+        left: 130px;
         right: 192.2px;
         width: 383.6px;
     }
@@ -48,24 +48,23 @@
     .banner2 .img-banner {
         width: 354px;
         height: 236px;
-        margin-left: 30px;
+
     }
 
     .banner3 .img-banner {
         width: 354px;
         height: 236px;
-        margin-left: 60px;
 
     }
 
     .banner2 .complex {
-        right: 40px;
+        right: 65px;
         bottom: 10px;
     	  font-size: 20px;
     }
 
     .banner3 .simple {
-        right: 40px;
+        right: 30px;
     	  bottom: 10px;
     	  font-size: 20px;
     }
@@ -146,7 +145,7 @@
 
     footer {
         margin-top: 10px;
-        width: 100%;
+        width: 680px;
     }
 
     footer .contenedor {
@@ -165,15 +164,22 @@
 
     /*SING IN TABLET*/
     .contenedor-signin {
-        width: 800px;
+        width: 680px;
     }
+    .cuerpo-singin{
+      width:500px;
+    }
+    .formulario-signin{
+      width:500px;
+    }
+
 
     .watch-singin {
         width: 100%;
     }
 
     .olvide {
-        margin-right: 45px;
+        margin-right: 0px;
     }
 
     .watch-singin {
@@ -188,10 +194,10 @@
     .faqs h1 {
     	  font-weight: 700;
         font-size: 25px;
-        left: 80px;
+        left:5px;
         margin-bottom: 25px;
         margin-top: 50px;
-        width: 800px;
+        width: 680px;
         text-align: center;
     }
 
@@ -223,5 +229,43 @@
     }
 
     /*REGISTER TABLET*/
+    .contenedor-register {
+        width: 680px;
+    }
+    .cuerpo-register{
+      width: 500px;
+    }
+
+
+    .watch-singin {
+        width: 100%;
+    }
+
+    .seccion-formulario-register{
+      width:550px;
+    }
+
+    .seccion-formulario-register p{
+      margin-left: 150px;
+    }
+
+    .formulario-register{
+      width:500px;
+    }
+
+
+    /*Formulario*/
+    .form1 {
+    	width: 100%;
+    	font-size: 12px;
+    	font-weight: 200;
+    	font-style: normal;
+    	line-height: 20px;
+    	opacity: 0.85;
+    	border: 2px solid #f1f1f1;
+    	border-radius: 3px;
+    	margin-bottom: 10px;
+    	padding-left: 8px;
+    }
 
 }
