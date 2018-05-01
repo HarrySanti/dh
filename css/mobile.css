@@ -11,6 +11,7 @@ a:hover {
   text-decoration: underline;
 }
 
+
 /*REGISTRO / INICIO SESION*/
 .registro:hover {
 	text-decoration: underline;
@@ -18,7 +19,7 @@ a:hover {
 }
 
 .ingresar:hover {
-	text-decoration: underline;
+	text-decoration: none;
 	color: white;
 }
 
@@ -82,9 +83,13 @@ header h1 {
 
 /*BANNER*/
 .banner {
-	display: block;
-	position: relative;
 	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
 .banner .img-banner {
@@ -93,16 +98,32 @@ header h1 {
 
 .banner .marca {
 	position: absolute;
-  align-content:center;
-  align-self: center;
-  bottom: 30px;
-  left: 115px;
-  right: 115px;
-  width: 250px;
-  color: white;
-  padding: 15px;
-  font-size: 80px;
-  font-weight: 700;
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+	align-content: center;
+  justify-content: center;
+  margin: 0px auto;
+	width: 100%;
+	height: 100%;
+}
+
+.banner .marca h1 {
+	display: absolute;
+	justify-content: center;
+	font-size: 80px;
+	font-weight: 700;
+	color: white;
+	width: auto;
+}
+
+.banner .bajada {
+	display: absolute;
+	justify-content: center;
+	font-family: 'Nothing You Could Do';
+	font-size: 25px;
+	color: white;
+	width: auto;
 }
 
 /*NAV*/
@@ -122,53 +143,65 @@ nav ul li:hover {
 }
 
 /*BANNERS 2 y 3*/
-.banner2 {
-	display: block;
+
+.banners {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
 	position: relative;
 	margin: 0px auto;
 	margin-top: 15px;
+	width: 100%;
+}
+
+.banners img {
 	width: 320px;
 	height: 213px;
 }
 
-.banner2 .img-banner {
-	width: 100%;
-	height: 100%;
+.banner2 {
+	display: flex;
+  align-items: center;
+	align-content: center;
+  justify-content: center;
+	position: relative;
+	margin: 0px auto;
 }
 
 .banner2 .complex {
 	position: absolute;
-	right: 50px;
-	bottom: 30px;
-	display: block;
+	display: absolute;
 	width: 50px;
 	color: white;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: 300;
+	right: 50px;
+	down: 30px;
+	text-align: right;
 }
 
 .banner3 {
-	display: block;
+	display: flex;
+  align-items: center;
+	align-content: center;
+  justify-content: center;
 	position: relative;
 	margin: 0px auto;
-	width: 320px;
-	height: 213px;
-}
-
-.banner3 .img-banner {
-	width: 100%;
-	height: 100%;
+	margin-top: 5px;
 }
 
 .banner3 .simple {
 	position: absolute;
-	right: 50px;
-	bottom: 30px;
-	display: block;
+	display: absolute;
 	width: 50px;
 	color: white;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: 300;
+	right: 28px;
+	down: 30px;
+	text-align: right;
 }
 
 .banner4 {
@@ -177,6 +210,7 @@ nav ul li:hover {
 
 /*SECCION ELEGI*/
 .elegi {
+	font-family: 'Nothing You Could Do';
 	display: flex;
 	justify-content: center;
 	margin-top: 20px;
@@ -184,7 +218,7 @@ nav ul li:hover {
 }
 
 .elegi h1 {
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: 300;
 }
 
@@ -192,7 +226,7 @@ nav ul li:hover {
 	font-weight: 700;
 }
 
-/*CARTA*/
+/*RELOJES*/
 .columnas {
 	margin-top: 20px;
 }
@@ -203,29 +237,59 @@ nav ul li:hover {
 	justify-content: center;
 }
 
+.columna:first-child {
+	padding-right: 30px;
+}
+
+.chicago {
+	padding-left: 10px;
+}
+
+.sidney {
+	padding-right: 5px;
+}
+
+.contenido {
+	align-content: left;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: left;
+}
+
+.columnas:last-child .columna:last-child .contenido {
+	padding-right: 25px;
+}
+
 .columna img {
 	height: 140px;
 	width: 140px;
 }
 
-.columna .img-square {
-	display: none;
-}
-
 .columna h2 {
-	margin: 12px 0;
 	font-weight: 700;
 	font-size: 18px;
+	padding-bottom: 25px;
 }
 
 .columna p {
-	margin-bottom: 12px;
+	margin-bottom: 20px;
 	font-size: 14px;
 	font-weight: 300;
 }
 
 .columna .descripcion {
 	display: none;
+}
+
+.columna hr {
+	width: 90px;
+	position: absolute;
+	height: 1px;
+	border: 0;
+	background-color: black;
+	margin: 10px 0 10px;
 }
 
 .columna .anadir {
@@ -238,6 +302,7 @@ nav ul li:hover {
 	background: #333;
 	padding: 10px 0;
 	font-size: 14px;
+	margin-top: 15px;
 }
 
 .columna .info {
@@ -333,6 +398,7 @@ header .watch-register h1 {
   width: 379px;
   display: flex;
   justify-content: flex-start;
+	margin-bottom: -38px;
 }
 
 .foto-register img {
@@ -346,8 +412,8 @@ header .watch-register h1 {
 }
 
 .seccion-formulario-register{
-  margin-left: 40px;
-  margin-top:20px;
+  margin-left: 30px;
+  margin-top: 30px;
   width: 379px;
 }
 
@@ -395,14 +461,13 @@ header .watch-register h1 {
 }
 
 .seccion-formulario-register p {
-	width: 200px;
-	font-size: 9px;
+	width: 300px;
+	font-size: 8px;
 	font-weight: 200;
 	font-style: normal;
 	opacity: 0.85;
 	text-align: center;
-	margin-top: 5px;
-	margin-left: 20px;
+	margin-top: 15px;
 }
 
 /*MOBILE SING IN*/
@@ -411,25 +476,34 @@ header .watch-singin {
 }
 
 header .watch-singin h1 {
-	font-size: 45px;
+	font-size: 60px;
 	font-weight: 800;
 	margin-top: 10px;
 }
 
 .cuerpo-singin {
 	display: flex;
-	align-content: flex-start;
-	width: 100%
+	justify-content: center;
+	align-content: center;
+	width: 95%;
 }
 
 .foto_signin img {
 	width: 100px;
 }
 
+.foto_signin_web {
+	display: none;
+}
+
 .seccion-formulario-singin {
-	margin-left: 15px;
-	margin-top: 50px;
+	margin-left: 10px;
+	margin-top: 80px;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
 }
 
 .seccion-formulario-singin h1{
@@ -452,30 +526,36 @@ header .watch-singin h1 {
 }
 
 .recordarme-box {
-	font-size: 10px;
 	font-style: italic;
 	position: absolute;
 	left: 5px;
 }
 
-.recordarme-box label{
-	font-size: 10px;
+.recordarme-box label {
+	font-size: 12px;
+	margin-bottom: 10px;
 }
 
-.olvidar{
-	font-size: 10px;
+.olvidar {
+	font-size: 12px;
 	position: absolute;
-	top: 8px;
-	right: 0px;
+	top: 3px;
+	right: -10px;
 	font-style: italic;
 	margin-right: 20px;
+	text-align: right;
 }
 
-.ingresar h2{
-	font-size: 15px;
+.ingresar h2 {
+	font-size: 18px;
 	color: black;
 	text-align: center;
 	font-weight: 700;
+	margin-top: 15px;
+}
+
+.ingresar hr {
+	width: 150px;
 }
 
 .footer-singnin {
@@ -497,6 +577,7 @@ header .watch-singin h1 {
 	margin-bottom: 15px;
 	justify-content: flex-start;
 	width: 320px;
+	margin-top: 20px;
 }
 
 .faqs div ul li h3 {
@@ -522,4 +603,8 @@ header .watch-singin h1 {
 	width: 320px;
 	position: relative;
 	line-height: 11.5px;
+}
+
+.faqs div ul:last-child li:last-child p:last-child {
+	margin-bottom: -100px;
 }
