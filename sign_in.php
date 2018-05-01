@@ -1,3 +1,7 @@
+<?php
+	require_once "validaciones.php";
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
