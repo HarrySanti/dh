@@ -1,3 +1,82 @@
+<?php
+	require_once "validaciones.php";
+	require_once "usuarios.php";
+
+	$errores = [
+    "nombre" => [],
+    "apellido" => [],
+    "dni" => [],
+    "celular" => [],
+    "email" => [],
+    "password" => []
+    ];
+
+    $user = usuarioNuevo();
+
+    // Validar si se completó el formulario
+    if ($_POST) {
+
+	//Fijarse si hay error en Nombre
+    	$errorEnNombre = $validarNombre($_POST["nombre"]);
+    	if (empty($errorEnNombre)) {
+    		$user["nombre"] = $_POST["nombre"];
+    	} else {
+    		$errores["nombre"] = $errorEnNombre;
+    	}
+
+    	//Fijarse si hay error en Apellido
+    	$errorEnApellido = $validarApellido($_POST["apellido"]);
+    	if (empty($errorEnApellido)) {
+    		$user["apellido"] = $_POST["apellido"];
+    	} else {
+    		$errores["apellido"] = $errorEnApellido;
+    	}
+
+    	//Fijarse si hay error en DNI
+    	$errorEnDni = $validarDNI($_POST["dni"]);
+    	if (empty($errorEnDni)) {
+    		$user["dni"] = $_POST["dni"];
+    	} else {
+    		$errores["dni"] = $errorEnDni;
+    	}
+
+    	//Fijarse si hay error en Celular
+    	$errorEnDni = $validarDNI($_POST["dni"]);
+    	if (empty($errorEnDni)) {
+    		$user["dni"] = $_POST["dni"];
+    	} else {
+    		$errores["dni"] = $errorEnDni;
+    	}
+
+    	//Fijarse si hay error en Celular
+    	$errorEnCelular = $validarCelular($_POST["celular"]);
+    	if (empty($errorEnCelular)) {
+    		$user["celular"] = $_POST["celular"];
+    	} else {
+    		$errores["celular"] = $errorEnCelular;
+    	}
+
+    	//Fijarse si hay error en Email
+    	$errorEnEmail = $validarEmail($_POST["email"]);
+    	if (empty($errorEnEmail)) {
+    		$user["email"] = $_POST["email"];
+    	} else {
+    		$errores["email"] = $errorEnEmail;
+    	}
+
+    	//Fijarse si hay error en Email
+    	$errorEnPassword = $validarPassword($_POST["password"]);
+    	if (empty($errorEnPassword)) {
+    		$user["password"] = $_POST["password"];
+    	} else {
+    		$errores["password"] = $errorEnPassword;
+    	}
+
+    	// falta poner q pasa si no hubo errores!!!!
+		// si no hubo errores, registro al usuario y voy al html de bienvenida
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -11,7 +90,7 @@
 		<link rel="stylesheet" href="css/desktop.css">
 	</head>
 	<body>
-		<div class="contenedor-register">
+		<div class="contenedor-registe">
 			<header class="watch-singin">
 					<a href="home.html"><h1>watch</h1></a>
 			</header>
