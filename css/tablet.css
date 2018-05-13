@@ -8,12 +8,12 @@
   top: 0px;
 }
 
-.banner h1 {
-  font-size: 128px;
+.banner .marca h1 {
+  font-size: 125px;
 }
 
-.banner h2 {
-  font-size: 40px;
+.banner .marca h2 {
+  font-size: 38px;
 }
 
 nav ul  {
@@ -28,6 +28,12 @@ nav ul li {
 
 nav ul li .nave {
   font-size: 15px;
+}
+
+/* HEADER USUARIO INGRESADO */
+.contenedor_login {
+	margin: 0px auto;
+	width: 680px;
 }
 
 /*BANNER*/
