@@ -32,6 +32,44 @@ header .registro h1 {
   font-size: 25px;
 }
 
+.banner .marca h1 {
+  font-size: 200px;
+}
+
+.banner .marca h2 {
+  font-size: 60px;
+}
+
+/* HEADER USUARIO INGRESADO */
+.contenedor_login {
+	margin: 0px auto;
+	width: 100%;
+}
+
+div .nombre_usuario {
+  align-items: center;
+	height: 80px;
+	width: 100%;
+}
+
+div .bienvenido h1 {
+	font-size: 24px;
+  margin-left: 50px;
+}
+
+div .logout {
+  align-items: center;
+	height: 80px;
+}
+
+div .logout .desconectate {
+	font-size: 18px;
+	margin-right: 40px;
+  margin-bottom: 22px;
+}
+
+/* BANNERS */
+
 .banner h1 {
 	font-size: 190px;
 }
