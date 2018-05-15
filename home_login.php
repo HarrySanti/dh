@@ -13,8 +13,11 @@
 	</head>
 	<body>
 		<div class="contenedor_login">
+			<div class="foto_user">
+				<img src="fotos/avatar.jpg" class="foto" alt="">
+			</div>
 			<div class="nombre_usuario">
-				<a href="mantenimiento.php" class="bienvenido"><h1>Bienvenido, <strong><?php echo "VER"?></strong></h1></a>
+				<a href="mantenimiento.php" class="bienvenido"><h1>Bienvenido, <strong><?php echo "TRAER NOMBRE DE USER"?></strong></h1></a>
 			</div>
 			<div class="logout">
 				<a href="home.php" class="desconectate"><h1> Logout</h1></a>
