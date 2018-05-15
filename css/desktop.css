@@ -46,6 +46,16 @@ header .registro h1 {
 	width: 100%;
 }
 
+div .foto_user {
+  height: 80px;
+  width: 140px;
+}
+
+div .foto_user .foto {
+  height: 70px;
+  width: 70px;
+}
+
 div .nombre_usuario {
   align-items: center;
 	height: 80px;
