@@ -89,6 +89,23 @@ header h1 {
 	justify-content: flex-start;
 }
 
+div .foto_user {
+	display: flex;
+	justify-content: flex-start;
+	background-color: black;
+	height: 60px;
+	width: 180px;
+}
+
+div .foto_user .foto {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 20px;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
 div .nombre_usuario {
 	display: flex;
 	justify-content: flex-start;
@@ -104,7 +121,7 @@ div .bienvenido h1 {
 	color: white;
 	font-weight: 300;
 	display: absolute;
-	margin-left: 30px;
+	margin-left: 10px;
 }
 
 div .bienvenido h1 strong {
