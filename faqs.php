@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -11,23 +15,37 @@
 		<link rel="stylesheet" href="css/desktop.css">
 	</head>
 	<body>
-		<div class="contenedor">
-			<header class="foruser">
-				<a href="sign_in.html" class="ingresar"><h1>INGRESAR</h1></a>
-				<h1>|</h1>
-				<a href="register.html" class="registro"><h1>REGISTRARME</h1></a>
-			</header>
-		</div>
+		<?php if(isset($_COOKIE['email'])){?>
+			<div class="contenedor_login">
+				<div class="foto_user">
+					<img src="fotos/avatar.jpg" class="foto" alt="">
+				</div>
+				<div class="nombre_usuario">
+					<a href="mantenimiento.php" class="bienvenido"><h1>Bienvenido, <strong><?php echo ($_COOKIE['email']); ?></h1></a>
+				</div>
+				<div class="logout">
+					<a href="test_sessions/deslogueo.php" class="desconectate"><h1> Logout</h1></a>
+				</div>
+			</div>
+		<?php }else{ ?>
+    		<div class="contenedor">
+    			<header class="foruser">
+    				<a href="test_sessions/tp_login/login.php" class="ingresar"><h1>INGRESAR</h1></a>
+    				<h1>|</h1>
+    				<a href="test_sessions/tp_register/register_final2/register.php" class="registro"><h1>REGISTRARME</h1></a>
+    			</header>
+    		</div>
+		<?php }; ?>
 		<div class="contenedor">
 			<section class="banner">
 				<img src="fotos/img_faqs.jpg" class="img-banner" alt="">
 				<div class="marca">
-					<a href="home.html" class="ingresar"><h1>watch</h1></a>
+					<a href="home.php" class="ingresar"><h1>watch</h1></a>
 				</div>
 			</section>
 			<nav>
 				<ul>
-					<li><a href="tendencias.html" class="nave">TENDENCIAS</a></li><li><a href="hombre.html" class="nave">HOMBRE</a></li><li><a href="mujer.html" class="nave">MUJER</a></li><li><a href="mallas.html" class="nave">MALLAS</a></li>
+					<li><a href="" class="nave">TENDENCIAS</a></li><li><a href="" class="nave">HOMBRE</a></li><li><a href="" class="nave">MUJER</a></li><li><a href="" class="nave">MALLAS</a></li>
 				</ul>
 			</nav>
 			<div class="faqs">
