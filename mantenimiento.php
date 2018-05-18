@@ -8,7 +8,7 @@ session_start();
 <body>
 
 
-  <h1>Página en construcción</h1>
+  <h1>Pagina en construccion</h1>
 
 </body>
 </html>
