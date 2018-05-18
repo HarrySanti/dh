@@ -24,16 +24,16 @@
 				<a href="mantenimiento.php" class="bienvenido"><h1>Bienvenido, <strong><?php echo ($_COOKIE['email']); ?></h1></a>
 			</div>
 			<div class="logout">
-				<a href="test_sessions/deslogueo.php" class="desconectate"><h1> Logout</h1></a>
+				<a href="deslogueo.php" class="desconectate"><h1>Logout</h1></a>
 			</div>
 		</div>
 	<?php }else{ ?>
 	<body>
 		<div class="contenedor">
 			<header class="foruser">
-				<a href="test_sessions/tp_login/login.php" class="ingresar"><h1>INGRESAR</h1></a>
+				<a href="sign_in.php" class="ingresar"><h1>INGRESAR</h1></a>
 				<h1>|</h1>
-				<a href="test_sessions/tp_register/register_final2/register.php" class="registro"><h1>REGISTRARME</h1></a>
+				<a href="register.php" class="registro"><h1>REGISTRARME</h1></a>
 			</header>
 		</div>
 	<?php }; ?>
