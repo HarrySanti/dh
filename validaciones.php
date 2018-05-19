@@ -14,22 +14,19 @@ function validarAvatar($file) {
 }
 
 function validarPasswordRegister($password, $confirmacion) {
-
     $errores = [];
-
     // Validar si se ingreso o no un password
     if (! isset($password)) {
         $errores[] = "Por favor complete el campo contraseña";
     }
     // Validar que el password tenga longitud minima 5
-    if (!strlen($password < 5)) {
+    if (!strlen($password <= 5)) {
         $errores[] = "La longitud de la contraseña debe ser mayor o igual a 5 caracteres";
     }
     // Validar que la confirmacion del password coincida
     if ($password != $confirmacion) {
         $errores[] = "Las contraseñas ingresadas son distintas";
     }
-
     return $errores;
 }
 
