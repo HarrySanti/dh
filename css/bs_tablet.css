@@ -1,0 +1,22 @@
+/* REGISTER - BOOSTRAP TABLET */
+
+@media (min-width: 768px) {
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.row img {
+  display: block;
+}
+
+.form-control {
+  margin-bottom: 0;
+}
+
+.btn {
+  font-size: 18px;
+}
+
+}
