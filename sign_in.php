@@ -104,6 +104,8 @@
 
 	<!-- Bootstrap -->
 	<link href="assets/libs/bootstrap-3/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/bs_mobile.css">
+	<link rel="stylesheet" href="css/bs_tablet.css">
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -124,9 +126,6 @@
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="navbar-links">
-				<ul class="nav navbar-nav">
-					<li><a href="home.php">Inicio</a></li>
-				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="register.php">Register</a></li>
 				</ul>
@@ -152,6 +151,9 @@
                 </div>
 
 								<!--Imprimo errores de registro de usuario, mas especificamente el mail. Mas abajo se hace con la contraseña-->
+								<div class="row">
+									<img src="fotos/img_signin_web.jpg" class="form-group col-sm-12" alt="Responsive image">
+								</div>
 								<div class="row">
                     <?php if (huboErrores($errores_login_user)) : ?>
                         <div class="col-sm-12 alert alert-danger">
