@@ -1,0 +1,85 @@
+/* REGISTER - BOOSTRAP MOBILE */
+
+/* REGISTER */
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+.navbar-default {
+  background-color: black;
+  border: 0px;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  font-weight: 600;
+}
+
+.navbar-brand {
+  padding-left: 30px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.row img {
+  display: none;
+}
+
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.form-control {
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.form-group:nth-child(6) {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.form-group:nth-child(6) .row {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.form-group:nth-child(7) {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn-info {
+  background-color: black;
+  border-color: black;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+/*LOG IN*/
+
+.checkbox {
+  padding-left: 15px;
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+
+.checkbox label {
+  font-style: italic;
+}
+
+}
