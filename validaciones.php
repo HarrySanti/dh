@@ -16,6 +16,10 @@ function validarAvatar($file) {
 function validarPasswordRegister($password, $confirmacion) {
     $errores = [];
     // Validar si se ingreso o no un password
+    if (!empty($_POST[$password])){
+        $errores[] = "El campo contraseña es obligatorio";
+    }
+    // Validar si se ingreso o no un password
     if (! isset($password)) {
         $errores[] = "Por favor complete el campo contraseña";
     }
