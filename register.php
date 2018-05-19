@@ -114,12 +114,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Registración</title>
 	<meta name="description" content="Registración de prueba">
 
 	<!-- Bootstrap -->
 	<link href="assets/libs/bootstrap-3/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/bs_mobile.css">
+	<link rel="stylesheet" href="css/bs_tablet.css">
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -140,16 +143,14 @@
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="navbar-links">
-				<ul class="nav navbar-nav">
-					<li><a href="home.php">Inicio</a></li>
-				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="login.php">Login</a></li>
+					<li><a href="sign_in.php">Login</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	<div class="container">
+
 		<div class="row">
             <form role="form" action="" method="post" enctype="multipart/form-data">
                 <div class="row">
@@ -165,6 +166,9 @@
                         </div>
                     <?php endif; ?>
                 </div>
+				<div class="row">
+						<img src="fotos/img_register_web.jpg" class="form-group col-sm-12" alt="Responsive image">
+				</div>
 				<div class="row">
 					<div class="form-group col-sm-6">
 						<label for="nombre">Nombre *</label>
@@ -287,7 +291,7 @@
 					</div>
 				</div>
 
-				<input type="submit" name="btn_submit" class="btn btn-info" value="Registrarme"/>
+				<input type="submit" name="btn_submit" class="btn btn-info" value="Registrarme!"/>
 			</form>
 		</div>
 	</div>
