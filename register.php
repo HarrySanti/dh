@@ -1,69 +1,52 @@
 <?php
-
 	require_once "validaciones.php";
 	require_once "usuarios.php";
 
-
-
-		//Creo el array de errores para llenarlo y mostrarlo después
+//Creo el array de errores para llenarlo y mostrarlo después
     $errores = [
         "email" => [],
         "password" => [],
-		"nombre"=> [],
-		"apellido"=>[]
+	"nombre"=> [],
+	"apellido"=>[]
     ];
 
-		//creo usuario de base
-		$user = usuarioNuevo();
+    //creo usuario de base
+    $user = usuarioNuevo();
 
     // Validar si se completo o no el formulario
     if ($_POST) {
-
 		//valido Nombre
 		$erroresEnNombre = validarNombre($_POST["nombre"]);
-
 		if (empty($erroresEnNombre)) {
 			$user["nombre"] = $_POST["nombre"];
 		} else {
 			$errores["nombre"] = $erroresEnNombre;
 		}
-
 		//valido apellido
 		$erroresEnApellido = validarApellido($_POST["apellido"]);
-
 		if (empty($erroresEnApellido)) {
 			$user["apellido"] = $_POST["apellido"];
 		} else {
 			$errores["apellido"] = $erroresEnApellido;
 		}
-
-
 		//valido la contraseña
 		$erroresEnPassword = validarPasswordRegister($_POST["contrasena"], $_POST["contrasena_confirm"]);
-
 		if (empty($erroresEnPassword)) {
 			$user["password"] = $_POST["contrasena"];
 		} else {
 			$errores["password"] = $erroresEnPassword;
 		}
-
 		//valido el mail
-
 		$erroresEnMail = validarEmailRegister($_POST["email"], $_POST["email_confirm"]);
-
 		if (empty($erroresEnMail)) {
 			$user["email"] = $_POST["email"];
 		} else {
 			$errores["email"] = $erroresEnMail;
 		}
-
 		//valido el avatar
-
 		if (isset($_FILES["avatar"]) && validarAvatar($_FILES["avatar"])) {
 			$user["avatar_url"] = $_FILES["avatar"];
 		}
-
-
         // Si no hubo errores, guardo el usuario
         if (! huboErrores($errores)) {
 						//también me guardo el nombre y el Apellido
