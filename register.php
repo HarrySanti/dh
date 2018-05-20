@@ -169,7 +169,7 @@
 					</div>
 					<div class="form-group col-sm-6">
 						<label for="email-confirm">Confirmar Email *</label>
-						<input type="text" class="form-control" id="email-confirm" name="email_confirm" value="" placeholder="Ingrese Confirmación Email">
+						<input type="text" class="form-control" id="email-confirm" name="email_confirm" value="<?= isset($_POST['email_confirm']) ? $_POST['email_confirm'] : "" ?>" placeholder="Ingrese Confirmación Email">
 					</div>
 				</div>
 				<div class="row">
