@@ -1,5 +1,6 @@
 <?php
-	session_start();
+	require_once "classes/Auth.php";
+	$auth=new Auth();
 ?>
 
 <!DOCTYPE html>
@@ -15,28 +16,28 @@
 		<link rel="stylesheet" href="css/tablet.css">
 		<link rel="stylesheet" href="css/desktop.css">
 	</head>
-	<?php if(isset($_COOKIE['email'])){?>
-		<div class="contenedor_login">
-			<div class="foto_user">
-				<img src="fotos/avatar.jpg" class="foto" alt="">
-			</div>
-			<div class="nombre_usuario">
-				<a href="mantenimiento.php" class="bienvenido"><h1>Bienvenido, <strong><?php echo ($_COOKIE['email']); ?></h1></a>
-			</div>
-			<div class="logout">
-				<a href="deslogueo.php" class="desconectate"><h1>Logout</h1></a>
-			</div>
+	<?php if(isset($_COOKIE["usuarioLogueado"])){?>
+	<div class="contenedor_login">
+		<div class="foto_user">
+			<img src="fotos/avatar.jpg" class="foto" alt="">
 		</div>
+		<div class="nombre_usuario">
+			<a href="mantenimiento.php" class="bienvenido"><h1>Bienvenido, <strong><?php echo ($_COOKIE["usuarioLogueado"]); ?></h1></a>
+		</div>
+		<div class="logout">
+			<a href="deslogueo.php" class="desconectate"><h1>Logout</h1></a>
+		</div>
+	</div>
 	<?php }else{ ?>
-	<body>
-		<div class="contenedor">
-			<header class="foruser">
-				<a href="sign_in.php" class="ingresar"><h1>INGRESAR</h1></a>
-				<h1>|</h1>
-				<a href="register.php" class="registro"><h1>REGISTRARME</h1></a>
-			</header>
-		</div>
+	<div class="contenedor">
+		<header class="foruser">
+			<a href="sign_in.php" class="ingresar"><h1>INGRESAR</h1></a>
+			<h1>|</h1>
+			<a href="register.php" class="registro"><h1>REGISTRARME</h1></a>
+		</header>
+	</div>
 	<?php }; ?>
+	<body>
 		<div class="contenedor">
 			<section class="banner">
 				<img src="fotos/img_home.jpg" class="img-banner" alt="">
@@ -45,39 +46,34 @@
 					<h2 class="bajada">the best way to live</h2>
 				</div>
 			</section>
-
 			<nav>
 				<ul>
 					<li><a href="" class="nave">TENDENCIAS</a></li><li><a href="" class="nave">HOMBRE</a></li><li><a href="" class="nave">MUJER</a></li><li><a href="" class="nave">MALLAS</a></li><li><a href="faqs.php" class="nave">FAQS</a></li>
 				</ul>
 			</nav>
-
-				<section class="banners">
-					<div class="banner2">
-						<a href="#"><img src="fotos/img_complex.jpg" class="img-banner" alt=""></a>
-						<div class="complex">
-							<h1>COMPLEX</h1>
-						</div>
+			<section class="banners">
+				<div class="banner2">
+					<a href="#"><img src="fotos/img_complex.jpg" class="img-banner" alt=""></a>
+					<div class="complex">
+						<h1>COMPLEX</h1>
 					</div>
-					<div class="banner3">
-						<a href="#"><img src="fotos/img_simple.jpg" class="img-banner" alt=""></a>
-						<div class="simple">
-							<h1>SIMPLE</h1>
-						</div>
 				</div>
-				</section>
-
+				<div class="banner3">
+					<a href="#"><img src="fotos/img_simple.jpg" class="img-banner" alt=""></a>
+					<div class="simple">
+						<h1>SIMPLE</h1>
+					</div>
+				</div>
+			</section>
 			<section class="banner4">
 				<a href="#"><img src="fotos/img_women.jpg" class="img-banner" alt=""></a>
 				<div class="women">
 					<h1>WOMEN</h1>
 				</div>
 			</section>
-
 			<section class="elegi">
 				<h1>ELEGI EL <strong>TUYO</strong></h1>
 			</section>
-
 			<section class="columnas">
 				<div class="columna">
 					<img src="fotos/img_lisboa.jpg" class="lisboa">
@@ -90,7 +86,6 @@
 						<p class="descripcion">Malla de cuero. 45 mm de diámetro. Diferentes colores. Marcadores y segunderos negros. Cristal: Zafiro.</p>
 					</div>
 				</div>
-
 				<div class="columna">
 					<img src="fotos/img_galapagos.jpg" class="galapagos">
 					<div class="contenido">
@@ -103,7 +98,6 @@
 					</div>
 				</div>
 			</section>
-
 			<section class="columnas">
 				<div class="columna">
 					<img src="fotos/img_toledo.jpg" class="toledo">
@@ -128,7 +122,6 @@
 					</div>
 				</div>
 			</section>
-
 			<section class="columnas">
 				<div class="columna">
 					<img src="fotos/img_chicago.jpg" class="chicago">
@@ -154,7 +147,6 @@
 				</div>
 			</section>
 		</div>
-
 		<div class="contenedor">
 			<footer>
 				<div class="watch">
