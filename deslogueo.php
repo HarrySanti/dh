@@ -1,6 +1,6 @@
 <?php
-	session_start();
-	setcookie('email','',$vencimiento,'/');
-	session_destroy();
+	require_once "classes/Auth.php";
+	$auth=new Auth();
+	$auth->logout();
 	header('location: home.php');
 ?>
