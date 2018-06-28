@@ -26,7 +26,7 @@
 			}else {
 				//sino no hago nada y no se lo recuerda
 			}
-				
+
 			//hago el login
 			header("Location: home.php");
 
@@ -88,7 +88,7 @@
 						<div class="col-sm-12 alert alert-danger">
 							<ul>
 								<?php foreach($arrayDeErrores as $value) : ?>
-									<li><?= $value ?></li>
+									<li><?php $value ?></li>
 								<?php endforeach; ?>
 							</ul>
 						</div>
