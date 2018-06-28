@@ -3,14 +3,14 @@
 
 	class Auth {
 		public function __construct() {
-			session_start();
 
+			session_start();
 			//esta verificacion se hace para cuando entras de cero a la pagina y no te logueaste. Chequea si está creada la COOKI. Si esta creada, te logueo, sino, te pide usuario y contraseña
 			if (!$this->estaLogueado() && isset($_COOKIE["usuarioLogueado"])) {
 				$this->loguear($_COOKIE["usuarioLogueado"]);
 			}
 		}
-		
+
 		//defino las funciones para poder loguearme
 		public function loguear($email) {
 			$_SESSION["usuarioLogueado"] = $email;

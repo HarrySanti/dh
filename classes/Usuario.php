@@ -92,7 +92,7 @@
 			$stmt->bindValue(":password", $this->password);
 			$stmt->bindValue(":nombre", $this->nombre);
 			$stmt->bindValue(":apellido", $this->apellido);
-			
+
 			// Ejecuto el stmt
 			$stmt->execute();
 		}
@@ -108,7 +108,7 @@
 			$stmt=DB::getcon()->prepare($sql);
 			$stmt->bindValue(':email',$email,PDO::PARAM_STR);
 			$stmt->execute();
-			
+
 			$result=$stmt->fetch(PDO::FETCH_ASSOC);
 
 			//creo un usuario en blanco al cual lo voy a completar con lo que encontré en la DB
@@ -116,7 +116,7 @@
 			$usuario->toUser($result);
 			return $usuario;
 		}
-		
+
 		//Completo el usuario en blanco con la info que vino de la DB para poder compararlo y realizar el login.
 		public function toUser($data){
 			$this->email=$data['email'];
@@ -125,4 +125,4 @@
 			$this->apellido=$data['apellido'];
 		}
 	}
-?>	
+?>
